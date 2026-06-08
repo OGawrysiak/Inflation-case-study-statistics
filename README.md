@@ -26,7 +26,6 @@ whether lower-income groups feel price increases more acutely, and whether past 
 7. [Connection to the Literature](#7-connection-to-the-literature)
 8. [Statistical Methods](#8-statistical-methods)
 9. [Limitations](#9-limitations)
-10. [Dependencies](#10-dependencies)
 
 ---
 
@@ -78,16 +77,7 @@ case_study_6/
 ├── data/
 │   └── topic6_data.csv             ← raw survey data (do not modify)
 │
-├── figures/                        ← auto-populated when you run the notebook
-│   ├── figure1_distributions.png
-│   ├── figure2_strategies.png
-│   ├── figure3_income_inflation.png
-│   ├── figure4_countries.png
-│   ├── figure5_consequences.png
-│   └── figure6_predictors.png
-│
 ├── case_study_6.ipynb              ← main analysis notebook
-├── case_study_6_report.docx        ← written report (4 pages)
 └── README.md                       ← this file
 ```
 
@@ -382,25 +372,10 @@ more defensible and produce valid inference without these assumptions.
 
 ---
 
-## 10. Dependencies
-
-```python
-pandas >= 1.5
-numpy >= 1.23
-matplotlib >= 3.6
-seaborn >= 0.12
-scipy >= 1.9
-```
 
 Install all at once:
 ```bash
 pip install pandas numpy matplotlib seaborn scipy
 ```
-
-**Software citation:**
-> Figures produced in Python 3.12 using matplotlib 3.8 and seaborn 0.13.
-> Statistical tests via scipy.stats.
-
----
 
 *EU Consumer Expectations Survey (2024) · Statistics Case Study 6*
