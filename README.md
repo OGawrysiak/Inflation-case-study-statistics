@@ -26,7 +26,6 @@ whether lower-income groups feel price increases more acutely, and whether past 
 7. [Connection to the Literature](#7-connection-to-the-literature)
 8. [Statistical Methods](#8-statistical-methods)
 9. [Limitations](#9-limitations)
-10. [Dependencies](#10-dependencies)
 
 ---
 
@@ -373,25 +372,10 @@ more defensible and produce valid inference without these assumptions.
 
 ---
 
-## 10. Dependencies
-
-```python
-pandas >= 1.5
-numpy >= 1.23
-matplotlib >= 3.6
-seaborn >= 0.12
-scipy >= 1.9
-```
 
 Install all at once:
 ```bash
 pip install pandas numpy matplotlib seaborn scipy
 ```
-
-**Software citation:**
-> Figures produced in Python 3.12 using matplotlib 3.8 and seaborn 0.13.
-> Statistical tests via scipy.stats.
-
----
 
 *EU Consumer Expectations Survey (2024) · Statistics Case Study 6*
