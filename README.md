@@ -78,16 +78,7 @@ case_study_6/
 ├── data/
 │   └── topic6_data.csv             ← raw survey data (do not modify)
 │
-├── figures/                        ← auto-populated when you run the notebook
-│   ├── figure1_distributions.png
-│   ├── figure2_strategies.png
-│   ├── figure3_income_inflation.png
-│   ├── figure4_countries.png
-│   ├── figure5_consequences.png
-│   └── figure6_predictors.png
-│
 ├── case_study_6.ipynb              ← main analysis notebook
-├── case_study_6_report.docx        ← written report (4 pages)
 └── README.md                       ← this file
 ```
 
