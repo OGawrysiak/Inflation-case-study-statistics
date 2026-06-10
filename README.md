@@ -2,11 +2,6 @@
 ### EU Consumer Expectations Survey, 2024 — Statistics Case Study 6
 
 > **How much do households actually notice rising prices, and do their perceptions match official statistics?**
-
-This repository contains the full statistical analysis, Python notebook, and written report for Case Study 6.
-We use individual-level survey microdata from four EU countries to test whether households overestimate inflation,
-whether lower-income groups feel price increases more acutely, and whether past experience shapes future expectations.
-
 ---
 
 ## Table of Contents
@@ -76,8 +71,6 @@ Our analysis directly tests the patterns described in these sources using microd
 # Install required libraries
 pip install pandas numpy matplotlib seaborn scipy scikit_posthocs
 
-# Open the notebook in VS Code
-code case_study_6.ipynb
 ```
 
 Run cells **in order** from top to bottom. The first three cells (imports, data load, encodings)
@@ -86,15 +79,14 @@ must be run before any figure cell.
 | Cell | Content |
 |---|---|
 | Cell 1 | Imports + global style settings + `ALPHA = 0.05` |
-| Cell 2 | Load CSV, sanity checks |
-| Cell 3 | Ordinal encodings, shared colour palette |
+| Cell 2 | Load CSV|
+| Cell 3 | Ordinal encodings|
 | Figure 1 | Distribution of perceptions and expectations |
 | Figure 2 | Coping strategy adoption and co-occurrence |
-| Figure 3 | Income vs perceptions (Spearman + Kruskal-Wallis + Dunn) |
-| Figure 4 | Cross-country comparison (Kruskal-Wallis) |
-| Figure 5 | Consumption reduction + financial situation (chi-square + Spearman) |
-| Figure 6 | Expectation anchoring + age effect (Spearman) |
-| Export | Optional PNG export at 300 dpi |
+| Figure 3 | Income vs perceptions|
+| Figure 4 | Cross-country comparison|
+| Figure 5 | Consumption reduction + financial situation|
+| Figure 6 | Expectation anchoring + age effect|
 
 ---
 
@@ -141,7 +133,7 @@ triggered broad-based behavioural adjustment, not merely a single coping respons
 | Kruskal-Wallis — past | H = 14.21 | p = .007 | **Reject H₀** |
 | Kruskal-Wallis — future | H = 16.83 | p = .002 | **Reject H₀** |
 
-**✓ H1 confirmed.** Both correlations are negative and significant. Dunn post-hoc tests show
+**H1 confirmed.** Both correlations are negative and significant. Dunn post-hoc tests show
 the 1st vs 5th quintile contrast is the most consistently significant after Bonferroni correction.
 Effect sizes are modest (ρ ≈ −0.07) — income alone explains roughly 0.5% of variance in perception,
 suggesting country of residence and individual experience are stronger drivers.
@@ -168,7 +160,7 @@ This is precisely the pattern documented in *"People's understanding of inflatio
 |---|---|---|---|
 | Spearman ρ — past vs future | ρ = +0.518 | p < .001 | **Reject H₀** |
 
-**✓ H2 confirmed.** This is the strongest finding in the study.
+**H2 confirmed.** This is the strongest finding in the study.
 Households who felt prices rose a lot in the past overwhelmingly expect them to keep rising —
 the heatmap diagonal is the darkest band.
 
@@ -196,7 +188,7 @@ the data source used here.
 | Spearman ρ — age vs past | ρ = −0.004 | p = .874 | **Fail to reject H₀** |
 | Spearman ρ — age vs future | ρ = −0.034 | p = .133 | **Fail to reject H₀** |
 
-**✗ H3 not supported.** Mean ordinal scores are essentially flat across age groups (range: 4.25–4.59).
+**H3 not supported.** Mean ordinal scores are essentially flat across age groups (range: 4.25–4.59).
 The hypothesis that younger respondents report lower inflation perception is not confirmed in this sample.
 
 This null result is itself informative. One explanation is that the 2022–2024 inflationary surge was so
