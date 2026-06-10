@@ -74,7 +74,7 @@ Our analysis directly tests the patterns described in these sources using microd
 
 ```bash
 # Install required libraries
-pip install pandas numpy matplotlib seaborn scipy
+pip install pandas numpy matplotlib seaborn scipy scikit_posthocs
 
 # Open the notebook in VS Code
 code case_study_6.ipynb
