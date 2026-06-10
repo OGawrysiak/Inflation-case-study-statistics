@@ -13,19 +13,18 @@ whether lower-income groups feel price increases more acutely, and whether past 
 
 1. [Background and Motivation](#1-background-and-motivation)
 2. [Dataset](#2-dataset)
-3. [Repository Structure](#3-repository-structure)
-4. [How to Run](#4-how-to-run)
-5. [Analysis Overview](#5-analysis-overview)
+3. [How to Run](#4-how-to-run)
+4. [Analysis Overview](#5-analysis-overview)
    - [Descriptive Findings](#51-descriptive-findings)
    - [H1 — Income and Inflation](#52-h1--income-and-inflation)
    - [H2 — Expectation Anchoring](#53-h2--expectation-anchoring)
    - [H3 — Age Effect](#54-h3--age-effect)
    - [Cross-Country Differences](#55-cross-country-differences)
    - [Consequences of Perceived Inflation](#56-consequences-of-perceived-inflation)
-6. [Key Findings at a Glance](#6-key-findings-at-a-glance)
-7. [Connection to the Literature](#7-connection-to-the-literature)
-8. [Statistical Methods](#8-statistical-methods)
-9. [Limitations](#9-limitations)
+5. [Key Findings at a Glance](#6-key-findings-at-a-glance)
+6. [Connection to the Literature](#7-connection-to-the-literature)
+7. [Statistical Methods](#8-statistical-methods)
+8. [Limitations](#9-limitations)
 
 ---
 
@@ -69,27 +68,13 @@ Our analysis directly tests the patterns described in these sources using microd
 
 ---
 
-## 3. Repository Structure
-
-```
-case_study_6/
-│
-├── data/
-│   └── topic6_data.csv             ← raw survey data (do not modify)
-│
-├── case_study_6.ipynb              ← main analysis notebook
-└── README.md                       ← this file
-```
-
----
-
 ## 4. How to Run
 
 **Prerequisites:** Python 3.9+, VS Code with the Jupyter extension
 
 ```bash
 # Install required libraries
-pip install pandas numpy matplotlib seaborn scipy
+pip install pandas numpy matplotlib seaborn scipy scikit_posthocs
 
 # Open the notebook in VS Code
 code case_study_6.ipynb
